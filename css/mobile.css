@@ -1,0 +1,123 @@
+@media screen and (max-width: 576px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  #banner {
+    height: 20rem;
+    width: auto;
+    background-position: center;
+  }
+
+  /* navigation */
+  nav {
+    height: 100%;
+    display: block;
+    text-align: start;
+  }
+
+  a {
+    /* display: inline-block; */
+    margin-top: 0px;
+  }
+
+  .items {
+    border: none;
+    margin: 10px 0;
+    margin-left: 20px;
+  }
+
+  /* ---infor ---*/
+  .info {
+    padding: 30px 10px;
+  }
+
+  .info-container {
+    display: block;
+  }
+
+  /* Thông tin nghề nghiệp */
+  .container-job-info {
+    display: block;
+    padding: 15px 0px;
+  }
+
+  .items-job-info {
+    border: 1px solid gray;
+    padding: 20px 0px 20px 20px;
+    margin: 20px 0;
+  }
+
+  /* Chứng chỉ - Giải thưởng */
+  .container-Cert {
+    display: block;
+  }
+
+  section > .container-certificate {
+    margin: auto;
+    padding: 30px 10px;
+  }
+
+  .Cert-conten {
+    display: block;
+    margin: 30px 5px;
+  }
+
+  /* Tạo Boder phân cách */
+  .container-Cert {
+    position: relative;
+  }
+
+  .container-Cert::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #d6c08d;
+    top: 67%;
+    /* 535px 260px */
+  }
+
+  .container-Cert::before {
+    position: absolute;
+    content: "";
+    height: 0.5px;
+    width: 100%;
+    background-color: #d6c08d;
+    top: 32%;
+  }
+
+  .Cert_PRF::before {
+    display: none;
+  }
+
+  /* Dự án */
+  .container-flex {
+    display: block;
+  }
+
+  .project-conten {
+    margin-bottom: 50px;
+    height: 500px;
+  }
+
+  /* footer */
+  .icon p {
+    display: none;
+  }
+
+  .container-footer {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .items-job-info {
+    display: block;
+  }
+}

@@ -1,0 +1,395 @@
+/* general css */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+body {
+  padding: 0 50px;
+  /* font-family: sans-serif;
+  font-size: 14px;
+  line-height: 18px; */
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* icon_blue */
+i {
+  color: rgb(50, 92, 232);
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 12%;
+}
+
+.border-radius-blue {
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 0px 10px;
+  background-color: rgb(0, 119, 255);
+  color: #fff;
+}
+
+section > .container-certificate {
+  margin: auto;
+  padding: 10px 50px;
+}
+
+#nav-bar {
+  text-align: center;
+}
+
+/* Banner */
+#banner {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.551), rgba(0, 0, 0, 0.651)),
+    url(../images/banner.jpg);
+  background-size: cover;
+  padding: 0px 50px;
+  background-position: center;
+}
+/* #banner img {
+    width: 100%;
+    height: 100%;
+} */
+
+.banner_title {
+  position: absolute;
+  text-transform: uppercase;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.avatar {
+  position: absolute;
+  border: 6px solid white;
+  border-radius: 100%;
+  width: 150px;
+  height: 180px;
+  top: 80%;
+  right: 45%;
+}
+
+/* navigation */
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.items {
+  height: inherit;
+  flex-basis: 120px;
+  border-left: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+  border-collapse: collapse;
+}
+.items3 {
+  flex-basis: 250px;
+}
+.items3 :first-child {
+  padding-top: 7px;
+  font-size: 24px;
+}
+.items3 :last-child {
+  font-size: 11px;
+}
+
+/* ---infor ---*/
+.info-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.info {
+  padding: 50px;
+}
+
+.personal-info {
+  background-color: rgb(225, 223, 223);
+}
+
+.section-title {
+  margin-bottom: 30px;
+}
+
+.mt-40 {
+  margin-bottom: 20px;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+/* error-email */
+.error-email {
+  color: red;
+  font-weight: 700;
+}
+
+/* ẩn thông tin user đến khi submit email */
+.info-container .section-content {
+  display: none;
+}
+
+/* Thông tin nghề nghiệp */
+#job-info {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.container-job-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 2fr 1fr; */
+  gap: 30px;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+.items-job-info {
+  border: 1px solid gray;
+  padding: 20px 0px 20px 20px;
+
+  /* Grid items */
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 50px 1fr;
+  justify-content: center;
+  /* grid-column: 2 /-1; */
+}
+
+.items-job-info h1,
+td {
+  align-self: center;
+}
+
+.items-job-info ul {
+  margin-left: 15px;
+  padding-right: 30px;
+  grid-column: 1 / -1;
+}
+
+.items-job-info ul li {
+  margin-top: 40px;
+}
+
+/* ẩn section-content */
+.parent .section-content {
+  display: none;
+}
+
+/* ẩn btn view-more, less-more */
+.parent .control-view {
+  display: none;
+}
+/* content Sở thích,Ngôn ngữ - Kỹ năng */
+.grid-content {
+  grid-column: 1/-1;
+}
+/* Sở thích */
+.icons-conten i {
+  border: 1px solid blue;
+  border-radius: 100%;
+  padding: 15px;
+}
+
+.icons-conten {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.icons-conten > * {
+  flex: 1 0 auto;
+  text-align: center;
+}
+.icons-conten p {
+  font-size: 12px;
+  margin-bottom: 0px;
+  margin: 0px;
+}
+
+/* Ngôn ngữ - Kỹ năng */
+.EXP-Bar-blue {
+  background-color: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+.EXP-Bar-gray {
+  background-color: rgb(234, 229, 229);
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+/* Chứng chỉ - Giải thưởng */
+.container-Cert {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 50px;
+}
+
+.container-Cert img {
+  width: 200px;
+  height: 100px;
+}
+.Cert-conten {
+  display: flex;
+}
+.Cert-comment {
+  padding-left: 20px;
+}
+/* Tạo Boder phân cách */
+.Cert_PRF {
+  position: relative;
+}
+.Cert_PRF::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100px;
+  background-color: #d6c08d;
+  left: -10%;
+}
+/* .Cert_PRF::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 1235px;
+  background-color: #d6c08d;
+  top: 120px;
+  left: -108%;
+} */
+
+.container-Cert {
+  position: relative;
+}
+
+.container-Cert::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #d6c08d;
+  top: 50%;
+  /* 535px 260px */
+}
+
+/* Dự án */
+.project-conten img {
+  width: 100%;
+}
+
+#project {
+  margin-top: 30px;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+/* .MoTa span,
+.NhiemVu span,
+.CongNghe span {
+  width: 85px;
+} */
+
+.container-flex {
+  display: flex;
+  gap: 20px;
+}
+/* project-conten-grid */
+.project-conten {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  height: 500px;
+}
+
+.item1 {
+  border: 1px solid #ece9e9;
+  border-bottom: 0px;
+  padding-top: 15px;
+  padding-left: 20px;
+  margin-top: 0px;
+}
+
+.item2 {
+  display: flex;
+  gap: 20px;
+  border: 1px solid #ece9e9;
+  border-bottom: 0px;
+  align-items: center;
+  padding-left: 10px;
+}
+.item2 p {
+  margin-bottom: 0;
+}
+.item2-sm {
+  display: flex;
+  gap: 10px;
+}
+
+.MoTa {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  gap: 20px;
+  border: 1px solid #ece9e9;
+  border-bottom: 0px;
+  padding: 5px 0 5px 10px;
+}
+
+.NhiemVu {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  gap: 20px;
+  border: 1px solid #ece9e9;
+  border-bottom: 0px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.CongNghe {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  gap: 20px;
+  border: 1px solid #ece9e9;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+/* footer */
+.container-footer {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  height: 90px;
+  margin-top: 30px;
+}
+
+.icon-linkedin-circled,
+.icon-github-circled,
+.icon-facebook-circled {
+  font-size: 250%;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+.icon p {
+  margin-bottom: 0;
+}
